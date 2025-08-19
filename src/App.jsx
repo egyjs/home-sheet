@@ -63,7 +63,7 @@ function parseTextToJSON(raw) {
 }
 
 export default function App() {
-  const [text, setText] = useState(`المبطخ\nالهيكل:17\nتلاجه: 30\nغساله: 25\nسخان غاز: 7\nمكواة: 2.5\nمكنسة:6\nكاتل:1.5\nكيتشن ماشين: 10\nطقم قهوة: 1\nطقم شاي: 0.5\nمجات: 1\nاطقم عصير: 5\nطقم ضيوف:1\nصواني ضيوف:2\nطقم طاسه:3\nطقمين حلل:15\nطقمين اطباق:3\nشوك وملاعق:3.2\nحافظات:2\n مغارف:1\n---\nالمجلس\nركنة: 50\nسفرة:15\nتلفزيون مع طرابيزة: 20\n 5 ستائر: 6\n\n\n---`);
+  const [text, setText] = useState(``);
 
   const data = useMemo(() => parseTextToJSON(text), [text]);
   const [copied, setCopied] = useState(false);
